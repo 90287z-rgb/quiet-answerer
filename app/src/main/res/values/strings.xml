@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quiet Answerer</string>
+    <string name="widget_name">Quiet Answerer</string>
+
+    <string name="tab_status">Message</string>
+    <string name="tab_log">Log</string>
+    <string name="tab_vip">VIP</string>
+
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="like_it">Like it!</string>
+    <string name="rate_it">Rate it</string>
+    <string name="share_it">Share it</string>
+    <string name="contact_support">Contact support</string>
+    <string name="version">Version %1$s</string>
+    <string name="author">Free open-source app</string>
+
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="turn_off">Turn off</string>
+    <string name="turn_on">Turn on</string>
+
+    <string name="status_touch_to_set">Touch to set status</string>
+    <string name="status_no_message">Without message</string>
+    <string name="status_default_reply">I\'ll call you back</string>
+    <string name="new_status_placeholder">Type answer text</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="remove">Remove</string>
+    <string name="clear_log">Clear log</string>
+    <string name="clear">Clear</string>
+    <string name="delete_selected">Delete selected</string>
+    <string name="enable_all">Enable all</string>
+    <string name="disable_all">Disable all</string>
+    <string name="vip_empty">No VIP contacts yet.\nTap + to add contacts that will ring normally.</string>
+    <string name="add_contact">Add contact</string>
+    <string name="calls_count">%1$d calls</string>
+    <string name="replies_count">%1$d replies</string>
+    <string name="until_time">until %1$s</string>
+    <string name="timer_title">Auto-off timer</string>
+    <string name="timer_custom">Custom…</string>
+    <string name="timer_custom_hint">Pick time</string>
+    <string name="timer_disable">Disable timer</string>
+    <string name="timer_active">Timer active until %1$s</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+
+    <string name="settings_end_calls">End calls</string>
+    <string name="settings_end_calls_desc">Automatically hang up incoming calls while the mode is on. May not work on some devices.</string>
+    <string name="settings_sms">SMS replies</string>
+    <string name="settings_friends_only">Friends only</string>
+    <string name="settings_friends_only_desc">Send replies only to contacts saved in your phone book.</string>
+    <string name="settings_frequency">Response frequency</string>
+    <string name="frequency_15">Every 15 minutes</string>
+    <string name="frequency_30">Every 30 minutes</string>
+    <string name="frequency_60">Every hour</string>
+    <string name="frequency_360">Every 6 hours</string>
+    <string name="frequency_720">Every 12 hours</string>
+    <string name="settings_mute">Mute</string>
+    <string name="settings_mute_music">Music &amp; media</string>
+    <string name="settings_mute_notifications">Notifications</string>
+    <string name="settings_mute_system">System sounds</string>
+    <string name="settings_mute_alarm">Alarm</string>
+    <string name="settings_mute_alarm_desc">Keep alarms running — never block the alarm clock completely.</string>
+
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="notification_channel_name">Quiet mode status</string>
+    <string name="notification_channel_desc">Status of the running quiet mode</string>
+    <string name="notification_title">Quiet mode is on</string>
+
+    <string name="dnd_required_title">Do not disturb access required</string>
+    <string name="dnd_required_desc">To actually silence the phone, allow Do Not Disturb access. Without it the phone will not be muted.</string>
+    <string name="dnd_open_settings">Allow access</string>
+    <string name="notification_permission_requested">Notifications permission is needed to show the mode status.</string>
+    <string name="phone_permission_requested">Phone permission is needed to detect and end incoming calls.</string>
+
+    <string name="reply_history_title">Reply history</string>
+    <string name="log_empty">No events yet</string>
+    <string name="reply_status_pending">pending</string>
+    <string name="reply_status_sent">sent</string>
+    <string name="reply_status_fail">fail</string>
+    <string name="contact_unknown">Unknown</string>
+    <string name="status_too_long">Text does not fit into a single SMS</string>
+    <string name="status_empty">Text is empty</string>
+    <string name="status_name_hint">Status name</string>
+
+    <string name="onboarding_title">Quiet Answerer</string>
+    <string name="onboarding_step1_title">Silence your phone in one tap</string>
+    <string name="onboarding_step1_text">Turn on quiet mode for a while: all chosen sound channels go silent and the mode turns itself off later.</string>
+    <string name="onboarding_step2_title">Automatic SMS replies</string>
+    <string name="onboarding_step2_text">Incoming calls are ended and the caller automatically receives a reply SMS with your chosen text.</string>
+    <string name="onboarding_step3_title">Add the widget</string>
+    <string name="onboarding_step3_text">Long-press the home screen, choose the Quiet Answerer widget and drag it onto the home screen to control the mode with one tap.</string>
+    <string name="onboarding_start">Get started</string>
+
+    <string name="help_text">How it works:\n\n1. Timer and widget turn the quiet mode on for a chosen time.\n2. All selected sound channels are muted.\n3. Incoming calls are ended (optionally) and the caller receives an auto-reply SMS.\n4. VIP contacts always ring normally.\n5. All events are stored in the Log.\n\nIf the mode can not be silenced because of Do Not Disturb access, the widget shows a faded indicator — grant access in Settings → Sound.</string>
+    <string name="about_text">Completely free and open source. No ads, no analytics, no hidden purchases.\n\nAll features are available out of the box.\n\nIcon is derived from the Android robot, distributed under CC BY 3.0.</string>
+    <string name="about_license">License</string>
+    <string name="settings_timer_auto_off">Auto-off</string></resources>

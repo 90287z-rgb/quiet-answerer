@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Тихий автоответчик</string>
+    <string name="widget_name">Тихий автоответчик</string>
+
+    <string name="tab_status">Сообщения</string>
+    <string name="tab_log">Журнал</string>
+    <string name="tab_vip">ВИП</string>
+
+    <string name="settings">Настройки</string>
+    <string name="help">Помощь</string>
+    <string name="about">О программе</string>
+    <string name="like_it">Нравится!</string>
+    <string name="rate_it">Оценить</string>
+    <string name="share_it">Поделиться</string>
+    <string name="contact_support">Связаться с поддержкой</string>
+    <string name="version">Версия %1$s</string>
+    <string name="author">Бесплатное приложение с открытым кодом</string>
+
+    <string name="on">Вкл</string>
+    <string name="off">Выкл</string>
+    <string name="turn_off">Выключить</string>
+    <string name="turn_on">Включить</string>
+
+    <string name="status_touch_to_set">Нажмите, чтобы выбрать статус</string>
+    <string name="status_no_message">Без сообщения</string>
+    <string name="status_default_reply">Перезвоню вам позже</string>
+    <string name="new_status_placeholder">Текст ответа</string>
+    <string name="save">Сохранить</string>
+    <string name="add">Добавить</string>
+    <string name="duplicate">Дублировать</string>
+    <string name="remove">Удалить</string>
+    <string name="clear_log">Очистить журнал</string>
+    <string name="clear">Очистить</string>
+    <string name="delete_selected">Удалить выбранные</string>
+    <string name="enable_all">Включить все</string>
+    <string name="disable_all">Выключить все</string>
+    <string name="vip_empty">ВИП-контактов пока нет.\nНажмите «+», чтобы добавить контакты, которые всегда будут звонить со звуком.</string>
+    <string name="add_contact">Добавить контакт</string>
+    <string name="calls_count">Звонков: %1$d</string>
+    <string name="replies_count">Ответов: %1$d</string>
+    <string name="until_time">до %1$s</string>
+    <string name="timer_title">Таймер автоотключения</string>
+    <string name="timer_custom">Свое время…</string>
+    <string name="timer_custom_hint">Выберите время</string>
+    <string name="timer_disable">Отключить таймер</string>
+    <string name="timer_active">Таймер работает до %1$s</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="next">Далее</string>
+    <string name="skip">Пропустить</string>
+    <string name="done">Готово</string>
+
+    <string name="settings_end_calls">Сбрасывать звонки</string>
+    <string name="settings_end_calls_desc">Автоматически сбрасывать входящие вызовы, пока режим активен. Может не работать на некоторых устройствах.</string>
+    <string name="settings_sms">SMS-ответы</string>
+    <string name="settings_friends_only">Только друзьям</string>
+    <string name="settings_friends_only_desc">Отвечать только контактам, сохранённым в телефонной книге.</string>
+    <string name="settings_frequency">Частота ответов</string>
+    <string name="frequency_15">Каждые 15 минут</string>
+    <string name="frequency_30">Каждые 30 минут</string>
+    <string name="frequency_60">Каждый час</string>
+    <string name="frequency_360">Каждые 6 часов</string>
+    <string name="frequency_720">Каждые 12 часов</string>
+    <string name="settings_mute">Беззвучие</string>
+    <string name="settings_mute_music">Музыка и медиа</string>
+    <string name="settings_mute_notifications">Уведомления</string>
+    <string name="settings_mute_system">Системные звуки</string>
+    <string name="settings_mute_alarm">Будильник</string>
+    <string name="settings_mute_alarm_desc">Не блокировать будильник полностью — все оповещения его будут звонить.</string>
+
+    <string name="settings_appearance">Внешний вид</string>
+    <string name="settings_theme">Тема</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+
+    <string name="notification_channel_name">Статус тихого режима</string>
+    <string name="notification_channel_desc">Статус работающего тихого режима</string>
+    <string name="notification_title">Тихий режим включён</string>
+
+    <string name="dnd_required_title">Нужен доступ «Не беспокоить»</string>
+    <string name="dnd_required_desc">Чтобы телефон действительно замолчал, разрешите приложению доступ «Не беспокоить». Без него звук не будет приглушён.</string>
+    <string name="dnd_open_settings">Разрешить доступ</string>
+    <string name="notification_permission_requested">Для показа статуса режима нужно разрешение на уведомления.</string>
+    <string name="phone_permission_requested">Для определения и сброса входящих звонков нужно разрешение на телефон.</string>
+
+    <string name="reply_history_title">История ответов</string>
+    <string name="log_empty">Событий пока нет</string>
+    <string name="reply_status_pending">отправляется</string>
+    <string name="reply_status_sent">отправлено</string>
+    <string name="reply_status_fail">ошибка</string>
+    <string name="contact_unknown">Неизвестный</string>
+    <string name="status_too_long">Текст не помещается в одно SMS</string>
+    <string name="status_empty">Текст пуст</string>
+    <string name="status_name_hint">Название статуса</string>
+
+    <string name="onboarding_title">Тихий автоответчик</string>
+    <string name="onboarding_step1_title">Отключите звук одним касанием</string>
+    <string name="onboarding_step1_text">Включите тихий режим на время: все выбранные каналы звука замолчат, а режим сам выключится позже.</string>
+    <string name="onboarding_step2_title">Автоматические SMS-ответы</string>
+    <string name="onboarding_step2_text">Входящие звонки сбрасываются, а вызывающему автоматически приходит SMS-ответ с выбранным текстом.</string>
+    <string name="onboarding_step3_title">Добавьте виджет</string>
+    <string name="onboarding_step3_text">Зажмите пустое место на рабочем столе, выберите виджет «Тихий автоответчик» и перетащите его на экран для управления в одно касание.</string>
+    <string name="onboarding_start">Начать</string>
+
+    <string name="help_text">Как это работает:\n\n1. Таймер и виджет включают тихий режим на выбранное время.\n2. Все выбранные каналы звука приглушаются.\n3. Входящие звонки сбрасываются (опционально), вызывающему приходит автоответ по SMS.\n4. ВИП-контакты всегда звонят как обычно.\n5. Все события сохраняются в журнале.\n\nЕсли режим не может приглушить звук из-за отсутствия доступа «Не беспокоить», виджет показывает блёклый индикатор — разрешите доступ в Настройки → Звук.</string>
+    <string name="about_text">Полностью бесплатное приложение с открытым кодом. Без рекламы, аналитики и скрытых покупок.\n\nВсе функции доступны сразу.\n\nИконка создана на основе робота Android, распространяется по лицензии CC BY 3.0.</string>
+    <string name="about_license">Лицензия</string>
+    <string name="settings_timer_auto_off">Автоотключение</string></resources>
