@@ -4,4 +4,12 @@
     <color name="brand_red_dark">#7D1410</color>
     <color name="gray_500">#9E9E9E</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- Виджет: светлая конфигурация -->
+    <color name="widget_surface">#F2FCFCFD</color>
+    <color name="widget_glyph_off">#FF3A4550</color>
+    <color name="widget_ink">#FF1B2026</color>
+    <color name="widget_muted">#FF5C6A76</color>
+    <color name="widget_track_off">#1F000000</color>
+    <color name="widget_amber">#FFE8890C</color>
 </resources>

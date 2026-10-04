@@ -3,6 +3,7 @@
 
     <string name="app_name">Quiet Answerer</string>
     <string name="widget_name">Quiet Answerer</string>
+    <string name="widget_desc">Silent-mode toggle with the current auto-reply message.</string>
 
     <string name="tab_status">Message</string>
     <string name="tab_log">Log</string>

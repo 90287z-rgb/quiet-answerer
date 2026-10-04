@@ -27,29 +27,27 @@ object WidgetViews {
         val views = RemoteViews(context.packageName, R.layout.widget_autoanswer)
         val res = context.resources
 
-        val dark = 0xFF37474F.toInt()
-        val darkSub = 0xFF546E7A.toInt()
-        val white = 0xFFFFFFFF.toInt()
-
         val on = e.isOpen
         val silentOk = e.canMute
 
-        views.setInt(R.id.widget_root, "setBackgroundResource", if (on) R.drawable.widget_bg_on else R.drawable.widget_bg)
-
-        if (on) {
-            views.setFloat(R.id.widget_root, "setAlpha", if (silentOk) 1f else 0.55f)
-            views.setTextColor(R.id.widget_title, white)
-            views.setTextColor(R.id.widget_status, white)
-        } else {
-            views.setFloat(R.id.widget_root, "setAlpha", 1f)
-            views.setTextColor(R.id.widget_title, dark)
-            views.setTextColor(R.id.widget_status, darkSub)
+        // Кнопка-переключатель: круглая «пилюля» с луной. Выключен — серый трек и
+        // контурная луна; включён и глушение действительно работает — красная пилюля
+        // с белой луной; включён, но без DND-доступа — янтарная пилюля (предупреждение).
+        val trackRes = when {
+            !on -> R.drawable.widget_toggle_track
+            silentOk -> R.drawable.widget_toggle_active
+            else -> R.drawable.widget_toggle_warning
         }
+        views.setInt(R.id.widget_toggle, "setBackgroundResource", trackRes)
+        views.setImageViewResource(
+            R.id.widget_toggle_icon,
+            if (on) R.drawable.ic_moon_active else R.drawable.ic_moon
+        )
 
-        val title = if (on) res.getString(R.string.on) else res.getString(R.string.off)
-        views.setTextViewText(R.id.widget_title, title)
-
-        val statusText = e.statusText.ifBlank {
+        // Сообщение автоответа показывается как цитата; подсказка — без кавычек.
+        val statusText = if (e.statusText.isNotBlank()) {
+            "\u201C${e.statusText}\u201D"
+        } else {
             res.getString(R.string.status_touch_to_set)
         }
         views.setTextViewText(R.id.widget_status, statusText)
@@ -58,14 +56,6 @@ object WidgetViews {
         val showCycle = e.statusCount > 1
         views.setInt(R.id.widget_prev, "setVisibility", if (showCycle) View.VISIBLE else View.GONE)
         views.setInt(R.id.widget_next, "setVisibility", if (showCycle) View.VISIBLE else View.GONE)
-        val arrowColor = if (on) white else darkSub
-        views.setTextColor(R.id.widget_prev, arrowColor)
-        views.setTextColor(R.id.widget_next, arrowColor)
-
-        views.setTextViewText(
-            R.id.widget_toggle,
-            res.getString(if (on) R.string.turn_off else R.string.turn_on)
-        )
 
         val showCounters = on && (e.callCount > 0 || e.replyCount > 0)
         views.setInt(R.id.widget_counters, "setVisibility", if (showCounters) View.VISIBLE else View.GONE)

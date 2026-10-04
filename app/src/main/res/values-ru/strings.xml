@@ -3,6 +3,7 @@
 
     <string name="app_name">Тихий автоответчик</string>
     <string name="widget_name">Тихий автоответчик</string>
+    <string name="widget_desc">Переключатель бесшумного режима с текстом текущего автоответа.</string>
 
     <string name="tab_status">Сообщения</string>
     <string name="tab_log">Журнал</string>

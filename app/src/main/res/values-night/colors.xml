@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Виджет: тёмная конфигурация -->
+    <color name="widget_surface">#F21D2027</color>
+    <color name="widget_glyph_off">#FFD7DEE5</color>
+    <color name="widget_ink">#FFE9EDF2</color>
+    <color name="widget_muted">#FF9AA7B2</color>
+    <color name="widget_track_off">#33FFFFFF</color>
+    <color name="widget_amber">#FFFFB300</color>
+</resources>
