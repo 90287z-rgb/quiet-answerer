@@ -289,36 +289,43 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     fun setEndCalls(v: Boolean) {
         Prefs.setEndCalls(getApplication(), v)
+        _state.value = _state.value.copy(endCalls = v)
         refreshEnvironment()
     }
 
     fun setContactRequired(v: Boolean) {
         Prefs.setContactRequired(getApplication(), v)
+        _state.value = _state.value.copy(contactRequired = v)
         refreshEnvironment()
     }
 
     fun setFrequency(min: Int) {
         Prefs.setFrequencyMinutes(getApplication(), min)
+        _state.value = _state.value.copy(frequencyMin = min)
         refreshEnvironment()
     }
 
     fun setMuteMusic(v: Boolean) {
         Prefs.setMuteMusic(getApplication(), v)
+        _state.value = _state.value.copy(muteMusic = v)
         refreshEnvironment()
     }
 
     fun setMuteNotifications(v: Boolean) {
         Prefs.setMuteNotifications(getApplication(), v)
+        _state.value = _state.value.copy(muteNotifications = v)
         refreshEnvironment()
     }
 
     fun setMuteSystem(v: Boolean) {
         Prefs.setMuteSystem(getApplication(), v)
+        _state.value = _state.value.copy(muteSystem = v)
         refreshEnvironment()
     }
 
     fun setMuteAlarm(v: Boolean) {
         Prefs.setMuteAlarm(getApplication(), v)
+        _state.value = _state.value.copy(muteAlarm = v)
         refreshEnvironment()
     }
 

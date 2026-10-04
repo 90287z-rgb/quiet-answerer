@@ -187,8 +187,26 @@ fun HomeScreen(
                 }
             }
         },
-        floatingActionButton = {
+    ) { padding ->
+        Box(Modifier.fillMaxSize().padding(padding)) {
+            Column(Modifier.fillMaxWidth()) {
+            TabRow(selectedTabIndex = tabIndex) {
+                Tab(selected = tabIndex == 0, onClick = { vm.requestTab(0) }, text = { Text(context.getString(R.string.tab_status)) })
+                Tab(selected = tabIndex == 1, onClick = { vm.requestTab(1) }, text = { Text(context.getString(R.string.tab_log)) })
+                Tab(selected = tabIndex == 2, onClick = { vm.requestTab(2) }, text = { Text(context.getString(R.string.tab_vip)) })
+            }
+                // Высота расширенной FAB (56dp) + нижний отступ: контент не должен залезать под кнопку.
+                val fabInset = 72.dp
+                when (tabIndex) {
+                    1 -> LogTab(state, vm, onOpenReplies, fabInset)
+                    2 -> VipTab(state, vm, fabInset)
+                    else -> MessageTab(state, vm, ::showError, fabInset)
+                }
+            }
+
+            // Кнопка вкл/выкл — внизу по центру экрана.
             ExtendedFloatingActionButton(
+                modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 16.dp),
                 onClick = { vm.toggle() },
                 containerColor = if (state.sessionOpen) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.secondaryContainer,
                 contentColor = if (state.sessionOpen) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurfaceVariant,
@@ -202,22 +220,6 @@ fun HomeScreen(
                     Text(if (state.sessionOpen) context.getString(R.string.turn_off) else context.getString(R.string.turn_on))
                 }
             )
-        }
-    ) { padding ->
-        Column(Modifier.fillMaxSize().padding(padding)) {
-            TabRow(selectedTabIndex = tabIndex) {
-                Tab(selected = tabIndex == 0, onClick = { vm.requestTab(0) }, text = { Text(context.getString(R.string.tab_status)) })
-                Tab(selected = tabIndex == 1, onClick = { vm.requestTab(1) }, text = { Text(context.getString(R.string.tab_log)) })
-                Tab(selected = tabIndex == 2, onClick = { vm.requestTab(2) }, text = { Text(context.getString(R.string.tab_vip)) })
-            }
-            // Высота расширенной FAB (56dp) + её нижний отступ Scaffold (16dp): контент не должен
-            // залезать под кнопку «Включить/Выключить».
-            val fabInset = 72.dp
-            when (tabIndex) {
-                1 -> LogTab(state, vm, onOpenReplies, fabInset)
-                2 -> VipTab(state, vm, fabInset)
-                else -> MessageTab(state, vm, ::showError, fabInset)
-            }
         }
     }
 
